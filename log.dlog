@@ -1,0 +1,4 @@
+? safe width when want to print HTML pages
+  $ 670 px will be a safe bet
+  $ @media print, set width as 8.5 in;
+  
