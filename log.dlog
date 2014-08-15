@@ -2,3 +2,13 @@
   $ 670 px will be a safe bet
   $ @media print, set width as 8.5 in;
   
+? ui:repeat not working correctly if nested in rendered component
+  $ however, the ui:repeat is a render time tag, it will NOT check its rendered condition, nor its parent's
+  $ use p:dataList with type="none" instead
+
+? jsf build time and render time, JSTL vs JSF tags
+  $ all JSTL tags and all JSF <ui:xxx> tags which do not have a rendered attribute run during View Building Time
+  $ all JSF <ui:xxx> tags which has a rendered attribute run during View Rendering Time
+  $ <ui:repeat> tag is render time tag
+  $ rendered attribute will be check during View Rendering Time
+  
