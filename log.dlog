@@ -9,6 +9,9 @@
 ? jsf build time and render time, JSTL vs JSF tags
   $ all JSTL tags and all JSF <ui:xxx> tags which do not have a rendered attribute run during View Building Time
   $ all JSF <ui:xxx> tags which has a rendered attribute run during View Rendering Time
-  $ <ui:repeat> tag is render time tag
+  $ <ui:repeat> tag is render time tag, and please see above problem.
   $ rendered attribute will be check during View Rendering Time
   
+? always use bean to flatten out data
+  $ eg, Collection<?> can be binded to a bean, which has related method to modify without modify the collection it self
+  $ Code reuse will be improved.
