@@ -15,3 +15,13 @@
 ? always use bean to flatten out data
   $ eg, Collection<?> can be binded to a bean, which has related method to modify without modify the collection it self
   $ Code reuse will be improved.
+
+  
+? write small class and small tools
+  
+? varargs is not supported in JSF officially. 
+  $ varargs can not be accessed DIRECTLY in a managed bean, but when a object contains varargs method is nested in a managed
+  $ bean, this varargs method will work. 
+  $ PS: in such case, in order to use the varargs method, varargs part much be at least one element
+  $ PS: for varargs without parameter, a same method should be defined without any parameter. 
+  
