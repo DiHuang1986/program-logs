@@ -24,4 +24,11 @@
   $ bean, this varargs method will work. 
   $ PS: in such case, in order to use the varargs method, varargs part much be at least one element
   $ PS: for varargs without parameter, a same method should be defined without any parameter. 
+
   
+  
+-- javascript related
+? ready event is defined by jQuery, while onLoad is build in event.
+  $ $(function() {}) is executed when DOM is ready, that means <img/> tags are write to html page, but image is not. 
+  $ $(window).load(function() {}) is executed when the WHOLE web page is fully loaded, including image itself. 
+  $ so if dealing with image content, use load, not ready event. 
